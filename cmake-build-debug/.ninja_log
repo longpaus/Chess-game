@@ -1,5 +1,7 @@
 # ninja log v5
-10	611	1717456286220009541	CMakeFiles/Chess_game.dir/src/main.cpp.o	2601120d02d9c844
-611	718	1717456286329077722	Chess_game	89967c635a1f6b1d
-4	556	1717456988414373903	CMakeFiles/Chess_game.dir/src/main.cpp.o	2601120d02d9c844
-556	650	1717456988511131492	Chess_game	89967c635a1f6b1d
+3	560	1717556439606346991	CMakeFiles/Chess_game.dir/src/main.cpp.o	2601120d02d9c844
+4	536	1717556439582515846	CMakeFiles/Chess_game.dir/src/Game.cpp.o	e9e34643b131631b
+2	759	1717558113991507613	CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.o	ea2178de8e20ff87
+4	3322	1717558224642167826	CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.o	6639e86ec17b4023
+3322	3381	1717558224713687000	libcatch2_main.a	af791168d4c9eb5d
+3381	3503	1717558224831626106	test_text_editor	a70c5eb305a06b17

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Chess_game
+# Project: text_editor
 # Configurations: Debug
 # =============================================================================
 
@@ -41,38 +41,117 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/long/Documents/code$ projects/Chess-game/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Chess_game
+# Object build statements for EXECUTABLE target text_editor
 
 
 #############################################
-# Order-only phony target for Chess_game
+# Order-only phony target for text_editor
 
-build cmake_object_order_depends_target_Chess_game: phony || CMakeFiles/Chess_game.dir
+build cmake_object_order_depends_target_text_editor: phony || CMakeFiles/text_editor.dir
 
-build CMakeFiles/Chess_game.dir/src/main.cpp.o: CXX_COMPILER__Chess_game_unscanned_Debug /Users/long/Documents/code$ projects/Chess-game/src/main.cpp || cmake_object_order_depends_target_Chess_game
-  DEP_FILE = CMakeFiles/Chess_game.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -Wall -Wextra -pedantic
+build CMakeFiles/text_editor.dir/src/main.cpp.o: CXX_COMPILER__text_editor_unscanned_Debug /Users/long/Documents/code$ projects/Chess-game/src/main.cpp || cmake_object_order_depends_target_text_editor
+  DEP_FILE = CMakeFiles/text_editor.dir/src/main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/sdl2/2.30.3/include -I"/Users/long/Documents/code projects/Chess-game/include/SDL2" -isystem /opt/homebrew/Cellar/sdl2/2.30.3/include/SDL2
-  OBJECT_DIR = CMakeFiles/Chess_game.dir
-  OBJECT_FILE_DIR = CMakeFiles/Chess_game.dir/src
+  OBJECT_DIR = CMakeFiles/text_editor.dir
+  OBJECT_FILE_DIR = CMakeFiles/text_editor.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Chess_game
+# Link build statements for EXECUTABLE target text_editor
 
 
 #############################################
-# Link the executable Chess_game
+# Link the executable text_editor
 
-build Chess_game: CXX_EXECUTABLE_LINKER__Chess_game_Debug CMakeFiles/Chess_game.dir/src/main.cpp.o | /opt/homebrew/Cellar/sdl2/2.30.3/lib/libSDL2.dylib
+build text_editor: CXX_EXECUTABLE_LINKER__text_editor_Debug CMakeFiles/text_editor.dir/src/main.cpp.o | /opt/homebrew/Cellar/sdl2/2.30.3/lib/libSDL2.dylib
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/sdl2/2.30.3/lib  /opt/homebrew/Cellar/sdl2/2.30.3/lib/libSDL2.dylib
   LINK_PATH = -L/opt/homebrew/Cellar/sdl2/2.30.3/lib
-  OBJECT_DIR = CMakeFiles/Chess_game.dir
+  OBJECT_DIR = CMakeFiles/text_editor.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Chess_game
-  TARGET_PDB = Chess_game.dbg
+  TARGET_FILE = text_editor
+  TARGET_PDB = text_editor.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target catch2_main
+
+
+#############################################
+# Order-only phony target for catch2_main
+
+build cmake_object_order_depends_target_catch2_main: phony || CMakeFiles/catch2_main.dir
+
+build CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.o: CXX_COMPILER__catch2_main_unscanned_Debug /Users/long/Documents/code$ projects/Chess-game/lib/catch2_main.cpp || cmake_object_order_depends_target_catch2_main
+  DEP_FILE = CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/long/Documents/code projects/Chess-game/lib"
+  OBJECT_DIR = CMakeFiles/catch2_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/catch2_main.dir/lib
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target catch2_main
+
+
+#############################################
+# Link the static library libcatch2_main.a
+
+build libcatch2_main.a: CXX_STATIC_LIBRARY_LINKER__catch2_main_Debug CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/catch2_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libcatch2_main.a
+  TARGET_PDB = catch2_main.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_text_editor
+
+
+#############################################
+# Order-only phony target for test_text_editor
+
+build cmake_object_order_depends_target_test_text_editor: phony || cmake_object_order_depends_target_catch2_main
+
+build CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.o: CXX_COMPILER__test_text_editor_unscanned_Debug /Users/long/Documents/code$ projects/Chess-game/src/tests/main.test.cpp || cmake_object_order_depends_target_test_text_editor
+  DEP_FILE = CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -Wall -Wextra -Werror -pedantic-errors -Wconversion -Wsign-conversion -Wdouble-promotion -Wcast-align -Wformat=2 -Wuninitialized -Wnull-dereference -Wnon-virtual-dtor -Woverloaded-virtual -Wdeprecated-copy-dtor -Wold-style-cast -Wzero-as-null-pointer-constant -Wsuggest-override -fstack-protector-strong
+  INCLUDES = -I"/Users/long/Documents/code projects/Chess-game/lib" -isystem /opt/homebrew/Cellar/sdl2/2.30.3/include/SDL2
+  OBJECT_DIR = CMakeFiles/test_text_editor.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_text_editor.dir/src/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_text_editor
+
+
+#############################################
+# Link the executable test_text_editor
+
+build test_text_editor: CXX_EXECUTABLE_LINKER__test_text_editor_Debug CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.o | libcatch2_main.a /opt/homebrew/Cellar/sdl2/2.30.3/lib/libSDL2.dylib || libcatch2_main.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  LINK_LIBRARIES = -Wl,-rpath,"/Users/long/Documents/code projects/Chess-game/lib/libSDL2" -Wl,-rpath,/opt/homebrew/Cellar/sdl2/2.30.3/lib  libcatch2_main.a  /opt/homebrew/Cellar/sdl2/2.30.3/lib/libSDL2.dylib
+  LINK_PATH = -L"/Users/long/Documents/code projects/Chess-game/lib/libSDL2"   -L/opt/homebrew/Cellar/sdl2/2.30.3/lib
+  OBJECT_DIR = CMakeFiles/test_text_editor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_text_editor
+  TARGET_PDB = test_text_editor.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/long/Documents/code projects/Chess-game/cmake-build-debug" && /Users/long/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -100,6 +179,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build catch2_main: phony libcatch2_main.a
+
 # =============================================================================
 # Folder targets.
 
@@ -108,7 +189,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/long/Documents/code projects/Chess-game/cmake-build-debug
 
-build all: phony Chess_game
+build all: phony text_editor libcatch2_main.a test_text_editor
 
 # =============================================================================
 # Built-in targets

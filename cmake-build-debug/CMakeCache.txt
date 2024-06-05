@@ -150,7 +150,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Chess_game
+CMAKE_PROJECT_NAME:STATIC=text_editor
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -258,6 +258,15 @@ Project_SOURCE_DIR:STATIC=/Users/long/Documents/code projects/Chess-game
 
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/opt/homebrew/lib/cmake/SDL2
+
+//Value Computed by CMake
+text_editor_BINARY_DIR:STATIC=/Users/long/Documents/code projects/Chess-game/cmake-build-debug
+
+//Value Computed by CMake
+text_editor_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+text_editor_SOURCE_DIR:STATIC=/Users/long/Documents/code projects/Chess-game
 
 
 ########################

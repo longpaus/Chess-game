@@ -1,6 +1,6 @@
-#include <SDL.h>
+#include "SDL.h"
 #include <iostream>
-
+#include <vector>
 int main(int argc, char* argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         std::cerr << "Failed to initialize SDL: " << SDL_GetError() << std::endl;
