@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = "/Users/long/Documents/code projects/Chess-game/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/Cellar/cmake/3.29.3/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -117,24 +127,111 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Chess_game
+# Target rules for targets named text_editor_executables
 
 # Build rule for target.
-Chess_game: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chess_game
-.PHONY : Chess_game
+text_editor_executables: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 text_editor_executables
+.PHONY : text_editor_executables
 
 # fast build rule for target.
-Chess_game/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/build
-.PHONY : Chess_game/fast
+text_editor_executables/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/build
+.PHONY : text_editor_executables/fast
+
+#=============================================================================
+# Target rules for targets named catch2_main
+
+# Build rule for target.
+catch2_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 catch2_main
+.PHONY : catch2_main
+
+# fast build rule for target.
+catch2_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/build
+.PHONY : catch2_main/fast
+
+#=============================================================================
+# Target rules for targets named test_text_editor
+
+# Build rule for target.
+test_text_editor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_text_editor
+.PHONY : test_text_editor
+
+# fast build rule for target.
+test_text_editor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/build
+.PHONY : test_text_editor/fast
+
+#=============================================================================
+# Target rules for targets named text_editor_libraries
+
+# Build rule for target.
+text_editor_libraries: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 text_editor_libraries
+.PHONY : text_editor_libraries
+
+# fast build rule for target.
+text_editor_libraries/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/build
+.PHONY : text_editor_libraries/fast
+
+lib/catch2_main.o: lib/catch2_main.cpp.o
+.PHONY : lib/catch2_main.o
+
+# target to build an object file
+lib/catch2_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.o
+.PHONY : lib/catch2_main.cpp.o
+
+lib/catch2_main.i: lib/catch2_main.cpp.i
+.PHONY : lib/catch2_main.i
+
+# target to preprocess a source file
+lib/catch2_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.i
+.PHONY : lib/catch2_main.cpp.i
+
+lib/catch2_main.s: lib/catch2_main.cpp.s
+.PHONY : lib/catch2_main.s
+
+# target to generate assembly for a file
+lib/catch2_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/lib/catch2_main.cpp.s
+.PHONY : lib/catch2_main.cpp.s
+
+src/TextEditor.o: src/TextEditor.cpp.o
+.PHONY : src/TextEditor.o
+
+# target to build an object file
+src/TextEditor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/src/TextEditor.cpp.o
+.PHONY : src/TextEditor.cpp.o
+
+src/TextEditor.i: src/TextEditor.cpp.i
+.PHONY : src/TextEditor.i
+
+# target to preprocess a source file
+src/TextEditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/src/TextEditor.cpp.i
+.PHONY : src/TextEditor.cpp.i
+
+src/TextEditor.s: src/TextEditor.cpp.s
+.PHONY : src/TextEditor.s
+
+# target to generate assembly for a file
+src/TextEditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/src/TextEditor.cpp.s
+.PHONY : src/TextEditor.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +239,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,8 +247,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/tests/main.test.o: src/tests/main.test.cpp.o
+.PHONY : src/tests/main.test.o
+
+# target to build an object file
+src/tests/main.test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.o
+.PHONY : src/tests/main.test.cpp.o
+
+src/tests/main.test.i: src/tests/main.test.cpp.i
+.PHONY : src/tests/main.test.i
+
+# target to preprocess a source file
+src/tests/main.test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.i
+.PHONY : src/tests/main.test.cpp.i
+
+src/tests/main.test.s: src/tests/main.test.cpp.s
+.PHONY : src/tests/main.test.s
+
+# target to generate assembly for a file
+src/tests/main.test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/src/tests/main.test.cpp.s
+.PHONY : src/tests/main.test.cpp.s
 
 # Help Target
 help:
@@ -161,10 +282,23 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Chess_game"
+	@echo "... test"
+	@echo "... catch2_main"
+	@echo "... test_text_editor"
+	@echo "... text_editor_executables"
+	@echo "... text_editor_libraries"
+	@echo "... lib/catch2_main.o"
+	@echo "... lib/catch2_main.i"
+	@echo "... lib/catch2_main.s"
+	@echo "... src/TextEditor.o"
+	@echo "... src/TextEditor.i"
+	@echo "... src/TextEditor.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tests/main.test.o"
+	@echo "... src/tests/main.test.i"
+	@echo "... src/tests/main.test.s"
 .PHONY : help
 
 

@@ -1,3 +1,7 @@
-/Users/long/Documents/code projects/Chess-game/build/CMakeFiles/Chess_game.dir
+/Users/long/Documents/code projects/Chess-game/build/CMakeFiles/text_editor_executables.dir
+/Users/long/Documents/code projects/Chess-game/build/CMakeFiles/catch2_main.dir
+/Users/long/Documents/code projects/Chess-game/build/CMakeFiles/test_text_editor.dir
+/Users/long/Documents/code projects/Chess-game/build/CMakeFiles/text_editor_libraries.dir
+/Users/long/Documents/code projects/Chess-game/build/CMakeFiles/test.dir
 /Users/long/Documents/code projects/Chess-game/build/CMakeFiles/edit_cache.dir
 /Users/long/Documents/code projects/Chess-game/build/CMakeFiles/rebuild_cache.dir

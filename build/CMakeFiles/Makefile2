@@ -63,7 +63,10 @@ CMAKE_BINARY_DIR = "/Users/long/Documents/code projects/Chess-game/build"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Chess_game.dir/all
+all: CMakeFiles/text_editor_executables.dir/all
+all: CMakeFiles/catch2_main.dir/all
+all: CMakeFiles/test_text_editor.dir/all
+all: CMakeFiles/text_editor_libraries.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +74,115 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Chess_game.dir/clean
+clean: CMakeFiles/text_editor_executables.dir/clean
+clean: CMakeFiles/catch2_main.dir/clean
+clean: CMakeFiles/test_text_editor.dir/clean
+clean: CMakeFiles/text_editor_libraries.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Chess_game.dir
+# Target rules for target CMakeFiles/text_editor_executables.dir
 
 # All Build rule for target.
-CMakeFiles/Chess_game.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" --progress-num=1,2 "Built target Chess_game"
-.PHONY : CMakeFiles/Chess_game.dir/all
+CMakeFiles/text_editor_executables.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" --progress-num=5,6 "Built target text_editor_executables"
+.PHONY : CMakeFiles/text_editor_executables.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Chess_game.dir/rule: cmake_check_build_system
+CMakeFiles/text_editor_executables.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Chess_game.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/text_editor_executables.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 0
-.PHONY : CMakeFiles/Chess_game.dir/rule
+.PHONY : CMakeFiles/text_editor_executables.dir/rule
 
 # Convenience name for target.
-Chess_game: CMakeFiles/Chess_game.dir/rule
-.PHONY : Chess_game
+text_editor_executables: CMakeFiles/text_editor_executables.dir/rule
+.PHONY : text_editor_executables
 
 # clean rule for target.
-CMakeFiles/Chess_game.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess_game.dir/build.make CMakeFiles/Chess_game.dir/clean
-.PHONY : CMakeFiles/Chess_game.dir/clean
+CMakeFiles/text_editor_executables.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_executables.dir/build.make CMakeFiles/text_editor_executables.dir/clean
+.PHONY : CMakeFiles/text_editor_executables.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/catch2_main.dir
+
+# All Build rule for target.
+CMakeFiles/catch2_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" --progress-num=1,2 "Built target catch2_main"
+.PHONY : CMakeFiles/catch2_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/catch2_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/catch2_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 0
+.PHONY : CMakeFiles/catch2_main.dir/rule
+
+# Convenience name for target.
+catch2_main: CMakeFiles/catch2_main.dir/rule
+.PHONY : catch2_main
+
+# clean rule for target.
+CMakeFiles/catch2_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catch2_main.dir/build.make CMakeFiles/catch2_main.dir/clean
+.PHONY : CMakeFiles/catch2_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_text_editor.dir
+
+# All Build rule for target.
+CMakeFiles/test_text_editor.dir/all: CMakeFiles/catch2_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" --progress-num=3,4 "Built target test_text_editor"
+.PHONY : CMakeFiles/test_text_editor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_text_editor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_text_editor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 0
+.PHONY : CMakeFiles/test_text_editor.dir/rule
+
+# Convenience name for target.
+test_text_editor: CMakeFiles/test_text_editor.dir/rule
+.PHONY : test_text_editor
+
+# clean rule for target.
+CMakeFiles/test_text_editor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_text_editor.dir/build.make CMakeFiles/test_text_editor.dir/clean
+.PHONY : CMakeFiles/test_text_editor.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/text_editor_libraries.dir
+
+# All Build rule for target.
+CMakeFiles/text_editor_libraries.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" --progress-num=7,8 "Built target text_editor_libraries"
+.PHONY : CMakeFiles/text_editor_libraries.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/text_editor_libraries.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/text_editor_libraries.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/long/Documents/code projects/Chess-game/build/CMakeFiles" 0
+.PHONY : CMakeFiles/text_editor_libraries.dir/rule
+
+# Convenience name for target.
+text_editor_libraries: CMakeFiles/text_editor_libraries.dir/rule
+.PHONY : text_editor_libraries
+
+# clean rule for target.
+CMakeFiles/text_editor_libraries.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor_libraries.dir/build.make CMakeFiles/text_editor_libraries.dir/clean
+.PHONY : CMakeFiles/text_editor_libraries.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

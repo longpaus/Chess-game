@@ -1,0 +1,8 @@
+A multi-line text editor with optional word wrapping
+Common navigation keybinds: arrow keys, home, end, page up/down, scrolling
+Common editing keybinds: appending/inserting characters, backspace/delete, deleting words/lines/partial lines
+Mouse handling
+Selecting text, deleting/replacing it
+Copy/paste functionality
+Undo/redo
+Proper Unicode handling (e.g. foreign characters and emojis)
